@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+<head><title>Payment Site</title></head>
+<body>
+  <style>
+    hr {
+      position: absolute;
+      top: 80px; /* Adjust the value to position it vertically */
+      left: 330px; /* Adjust the value to position it horizontally */
+    }
+  </style>
+<b><center><span style="font-size: 40px; color: White;">Spark Banking</span></center></b>
+
+
+<hr size="310",class="hr" , width=50%>
+<hr size = "330", width=50%> 
+<body style="background-color:#282A36;">
+
+    <!-- Email Id-->
+<style>
+    .rounded-input {
+      border: 1px solid #ccc;
+      border-radius: 10px; 
+      padding: 3px 7px;
+      width: 400px; 
+      height: 30px;
+
+      position: absolute;
+      top: 150px; 
+      left: 500px;
+    }
+
+    .custom-text {
+      font-size: 25px;
+      color: White;
+
+      position: absolute;
+      top: 150px; 
+      left: 390px;
+    }
+</style>
+<label for="email"class="custom-text">Email Id:</label>
+<input type="text" class="rounded-input" id="email" placeholder="Enter email address" />
+
+<!-- Name -->
+<style>
+  .round-input {
+    border: 1px solid #ccc;
+    border-radius: 10px; 
+    padding: 2px 6px;
+    width: 400px; 
+    height: 30px;
+
+    position: absolute;
+    top: 195px; 
+    left: 500px;
+  }
+
+  .custo-text {
+    font-size: 25px;
+    color: White;
+
+    position: absolute;
+    top: 170px; 
+    left: 390px;
+  }
+</style>
+<p class="custo-text" for="name">Name :</p>
+<input type="text" class="round-input" placeholder="Enter your Name here">
+
+<style>
+.cust-text {
+  font-size: 25px;
+  color: White;
+
+  position: absolute;
+  top: 210px; 
+  left: 390px;
+}
+
+form {
+            width: 200px; /* Set the desired width */
+            height: 400px; /* Set the desired height */
+            padding: 10px; /* Add padding for spacing */
+            position: absolute;
+            left: 490px; /* Set the desired x-coordinate */
+            top: 230px;
+        }
+        
+        label {
+            display: block; /* Display labels on separate lines */
+            margin-bottom: 5px; /* Add spacing between labels */
+        }
+        
+        select {
+            width: 90%; /* Make the select element occupy full width */
+            height: 22px; /* Set the desired height */
+            font-size: 19px; /* Adjust the font size as needed */
+        }
+</style>
+
+<form>
+  <select>
+    <option value="United States">United States</option>
+    <option value="China">China</option>
+    <option value="Russia">Russia</option>
+    <option value="Germany">Germany</option>
+    <option value="United Kingdom">United Kingdom</option>
+    <option value="France">France</option>
+    <option value="Japan">Japan</option>
+    <option value="Israel">Israel</option>
+    <option value="India">India</option>
+    <option value="South Korea">South Korea</option>
+    <option value="Saudi Arabia">Saudi Arabia</option>
+    <option value="Canada">Canada</option>
+    <option value="Australia">Australia</option>
+    <option value="Brazil">Brazil</option>
+    <option value="Italy">Italy</option>
+    <option value="Turkey">Turkey</option>
+    <option value="United Arab Emirates">United Arab Emirates</option>
+    <option value="Switzerland">Switzerland</option>
+    <option value="Netherlands">Netherlands</option>
+    <option value="Sweden">Sweden</option>
+    <option value="Spain">Spain</option>
+    <option value="Poland">Poland</option>
+    <option value="Norway">Norway</option>
+    <option value="Belgium">Belgium</option>
+    <option value="Austria">Austria</option>
+    <option value="Iran">Iran</option>
+    <option value="Mexico">Mexico</option>
+    <option value="Indonesia">Indonesia</option>
+    <option value="South Africa">South Africa</option>
+    <option value="Argentina">Argentina</option>
+    <option value="Thailand">Thailand</option>
+    <option value="Egypt">Egypt</option>
+    <option value="Greece">Greece</option>
+    <option value="Vietnam">Vietnam</option>
+    <option value="Denmark">Denmark</option>
+    <option value="Malaysia">Malaysia</option>
+    <option value="Philippines">Philippines</option>
+    <option value="Pakistan">Pakistan</option>
+    <option value="Colombia">Colombia</option>
+    <option value="Chile">Chile</option>
+    <option value="Ukraine">Ukraine</option>
+    <option value="Nigeria">Nigeria</option>
+    <option value="Portugal">Portugal</option>
+    <option value="Iraq">Iraq</option>
+    <option value="Algeria">Algeria</option>
+    <option value="Morocco">Morocco</option>
+    <option value="Kenya">Kenya</option>
+    <option value="Peru">Peru</option>
+  </select>
+</form>
+<p class="cust-text">Country :</p>
+
+<script>
+        function validateEmail() {
+            var email = document.getElementById("email").value;
+            var regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            
+            if (regex.test(email)) {
+                window.location.assign("payment2.html");
+                alert("login successfully");
+            } else {
+                alert("invalid Email");
+            }
+        }
+    </script>
+
+<style>
+  .rounded-button {
+      width: 200px; /* Set the desired width */
+      height: 50px; /* Set the desired height */
+      border: none;
+      border-radius: 25px; /* Set half of the desired height to create rounded corners */
+      background-color: #4CAF50; /* Set the desired background color */
+      color: white;
+      text-align: center;
+      font-size: 16px;
+      cursor: pointer;
+      position: absolute; /* Set position to absolute */
+      left: 500px; /* Set the desired x-coordinate */
+      top: 300px; /* Set the desired y-coordinate */
+  }
+
+  .rounded-button:hover {
+      background-color: #45a049; /* Update background color on hover */
+  }
+
+  .rounded-button:active {
+      background-color: #367d38; /* Update background color when clicked */
+  }
+</style>
+<button class="rounded-button" onclick="validateEmail()">Donate</button>
+<div id="result"></div>
+
+
+<!--Testing area-->
+
+
+
+</body>
+</html>
